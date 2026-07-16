@@ -367,3 +367,34 @@ html {
     transform: translateY(-2px);
     box-shadow: 0px 4px 10px rgba(20, 3, 181, 0.3);
 }
+@media (max-width: 480px) {
+    .container-home {
+        /* Reduz o padding para dar mais espaço ao conteúdo no celular */
+        padding: 25px 15px; 
+        /* Garante que o container ocupe quase toda a largura, mas sem passar da tela */
+        width: 90%; 
+        max-width: 350px; 
+    }
+
+    .titulo-nome {
+        /* Reduz um pouco o tamanho da fonte para não quebrar a linha de forma estranha */
+        font-size: 1.8rem; 
+    }
+
+    .texto-descricao {
+        font-size: 1rem;
+    }
+
+    .menu-navegacao {
+        /* Permite que os botões quebrem para a linha de baixo se não couberem lado a lado */
+        flex-wrap: wrap; 
+        /* Ou, se preferir que fiquem um abaixo do outro, mude para: flex-direction: column; */
+        gap: 10px;
+    }
+
+    .botao {
+        /* Garante que o botão tenha um clique confortável no touch */
+        padding: 8px 16px; 
+        font-size: 0.9rem;
+    }
+}
