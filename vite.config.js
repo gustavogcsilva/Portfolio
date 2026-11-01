@@ -5,16 +5,16 @@ export default defineConfig({
   plugins: [react()],
   base: './',
   server: {
-    host: '127.0.0.1',
+    host: true,
     port: 5173,
   },
   preview: {
-    host: '127.0.0.1',
-    port: 4173,
+    host: '0.0.0.0',
+    port: Number(process.env.PORT) || 4173,
+    allowedHosts: true,
   },
   build: {
     outDir: 'dist',
     assetsDir: 'assets',
   },
 });
-

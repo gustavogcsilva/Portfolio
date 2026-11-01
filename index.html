@@ -20,5 +20,18 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+    <script>
+      window.addEventListener('DOMContentLoaded', function () {
+        setTimeout(function () {
+          var root = document.getElementById('root');
+          if (root && !root.hasChildNodes()) {
+            var fallbackScript = document.createElement('script');
+            fallbackScript.type = 'module';
+            fallbackScript.src = './static-app.js';
+            document.body.appendChild(fallbackScript);
+          }
+        }, 350);
+      });
+    </script>
   </body>
 </html>
