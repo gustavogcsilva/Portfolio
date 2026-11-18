@@ -30,11 +30,13 @@ Olá! Sou o **Gustavo Geraldo**, Desenvolvedor Full Stack apaixonado por tecnolo
 
 ## 📂 Projetos em Destaque
 
-1. **Mia Intelligence** — Diário emocional interativo com IA Generativa (Gemini API) para recomendação personalizada de livros e músicas e prevenção de risco (CVV 188).
-2. **Movecritic** — Plataforma Full Stack de catálogo e críticas de filmes e livros integrada a APIs externas com Python (Flask) e MySQL.
-3. **Gerencie DinDin** — Sistema de gestão financeira pessoal (regra 50/30/20) com exportação automatizada de relatórios fechados em PDF.
-4. **Route Dump** — Ferramenta de extração automatizada e mapeamento geográfico de rotas de transporte público (PDF Moovit → TXT estruturado).
-5. **Gerenciador de WhatsApp Bot** — Bot em Node.js & Express com Máquina de Estados Finitos (FSM) para qualificação automatizada de leads.
+1. **BVS Tasks (Executive Planner)** — Plataforma PWA Full Stack (TypeScript, React, Node.js, PostgreSQL) de planejamento executivo e estudos, com assistente de IA Vitorino, importação em lote de planilhas (Excel/CSV), relatórios em PDF e sincronização com Apple Calendar (.ics / webcal). [bv-tasks.onrender.com](https://bv-tasks.onrender.com/)
+2. **Meu Cuidado Diário** — Assistente de saúde familiar PWA offline-first (React 18, TypeScript, FastAPI, Python, IndexedDB) com scanner multimodal de caixas por foto, relatórios de bula com IA, gestão familiar e geolocalização de farmácias de plantão.
+3. **Mia Intelligence** — Diário emocional interativo com IA Generativa (Gemini API) para recomendação personalizada de livros e músicas e prevenção de risco (CVV 188).
+4. **Movecritic** — Plataforma Full Stack de catálogo e críticas de filmes e livros integrada a APIs externas com Python (Flask) e MySQL.
+5. **Gerencie DinDin** — Sistema de gestão financeira pessoal (regra 50/30/20) com exportação automatizada de relatórios fechados em PDF.
+6. **Route Dump** — Ferramenta de extração automatizada e mapeamento geográfico de rotas de transporte público (PDF Moovit → TXT estruturado).
+7. **Gerenciador de WhatsApp Bot** — Bot em Node.js & Express com Máquina de Estados Finitos (FSM) para qualificação automatizada de leads.
 
 ---
 

@@ -19,7 +19,7 @@ export const PROFILE_DATA = {
   stats: [
     { value: 'ADS', label: 'Ensino Superior Completo', detail: 'Análise e Desenv. de Sistemas' },
     { value: '21+', label: 'Tecnologias Dominadas', detail: 'Full Stack, Dados & DevOps' },
-    { value: '5+', label: 'Sistemas em Produção', detail: 'Web Apps, IA, Finanças & Bots' },
+    { value: '7+', label: 'Sistemas em Produção', detail: 'Web Apps, IA, Produtividade & Saúde' },
     { value: '100%', label: 'Foco em Resolução', detail: 'Código limpo & entrega real' },
   ],
   aboutParagraphs: [
@@ -248,6 +248,54 @@ export const TECH_CATEGORIES = [
 ];
 
 export const PROJECTS_DATA = [
+  {
+    id: 'bv-tasks',
+    title: 'BVS Tasks • Executive Planner',
+    subtitle: 'Planejamento Executivo, PWA Multi-dispositivo & Assistente Vitorino (IA)',
+    category: 'Produtividade & IA',
+    featured: true,
+    image: 'static/imagem-bvtasks.png',
+    liveUrl: 'https://bv-tasks.onrender.com/',
+    repoUrl: 'https://github.com/gustavogcsilva/bv-tasks',
+    domainDisplay: 'bv-tasks.onrender.com',
+    description:
+      'Plataforma web progressiva (PWA) Full Stack voltada ao planejamento executivo de tarefas, estudos e rotinas de alta performance. Possui persistência segura em PostgreSQL, assistente virtual inteligente Vitorino (IA), relógio em tempo real, importação em lote de planilhas (Excel/CSV) com categorização automática, fechamento mensal com diagnóstico inteligente, exportação em lote de relatórios PDF e sincronização bidirecional nativa com Apple Calendar (webcal:// e .ics).',
+    technologies: ['TypeScript', 'React', 'Node.js', 'PostgreSQL', 'PWA', 'IA Generativa'],
+    star: {
+      situacao:
+        'Estudantes e profissionais com rotinas de estudos e projetos de alta intensidade enfrentavam sobrecarga para consolidar metas, gerenciar prazos e sincronizar históricos com seus calendários nativos em múltiplos aparelhos.',
+      tarefa:
+        'Projetar e construir um ecossistema executivo unificado com banco relacional na nuvem, automação em lote, assistente de IA conversacional e integração fluida entre dispositivos móveis e desktop.',
+      acao:
+        'Desenvolvi o BVS Special em TypeScript com backend robusto em Node.js conectado ao PostgreSQL (queries parametrizadas com isolamento estrito por usuário e senhas em PBKDF2). Implementei PWA offline-first, assistente virtual Vitorino com IA para desdobramento de metas, fechamento mensal automático com IA, motor de importação de planilhas com seletor de contexto e feed de assinatura contínua (.ics / webcal://).',
+      resultado:
+        'Aplicação Full Stack em produção no Render (bv-tasks.onrender.com) com dashboard de métricas em tempo real, visualização versátil em Cards ou Grid, mini status bar e sincronização segura entre dispositivos.',
+    },
+  },
+  {
+    id: 'meu-cuidado-diario',
+    title: 'Meu Cuidado Diário',
+    subtitle: 'Assistente Inteligente de Saúde Familiar & Gestão de Medicamentos',
+    category: 'Saúde & IA',
+    featured: true,
+    image: 'static/imagem-meu-cuidado-diario.png',
+    liveUrl: 'https://github.com/gustavogcsilva/Meu-Cuidado-Di-rio',
+    repoUrl: 'https://github.com/gustavogcsilva/Meu-Cuidado-Di-rio',
+    domainDisplay: 'github.com/gustavogcsilva/Meu-Cuidado-Di-rio',
+    description:
+      'Aplicação PWA offline-first desenvolvida para transformar e simplificar o cuidado medicamentoso de toda a família. Conta com scanner multimodal de caixas por foto (zero digitação) para entrada e baixa de estoque em 1 clique, alertas preditivos de desabastecimento, gerador de mini-relatórios de bula com IA para detecção de interações cruzadas, perfis familiares compartilhados e busca geolocalizada (GPS) de farmácias de plantão em raio de 3 km via OpenStreetMap.',
+    technologies: ['React', 'TypeScript', 'FastAPI', 'Python', 'IndexedDB', 'PWA'],
+    star: {
+      situacao:
+        'Famílias e cuidadores responsáveis por pessoas em tratamento contínuo enfrentam alto estresse decorrente de esquecimento de horários, risco de interações medicamentosas perigosas e falta de previsão do término dos remédios.',
+      tarefa:
+        'Desenvolver uma solução de saúde preventiva e familiar acessível, com interface de alto contraste, automação visual de estoque e suporte pleno ao funcionamento offline.',
+      acao:
+        'Criei o frontend em React 18, TypeScript, Tailwind CSS e Dexie/IndexedDB para operação offline-first, integrado a um backend FastAPI com APScheduler. Desenvolvi o scanner multimodal de caixas por foto para cadastro instantâneo de comprimidos, módulo de IA para geração de mini-relatórios pós-cadastro com cruzamento de interações, avisos de reavaliação médica aos 90 dias e busca por GPS de farmácias próximas via Overpass API.',
+      resultado:
+        'Sistema funcional com layout split-view responsivo (Doses/Estoque + Calendário Unificado) e motor de automação de alertas que elimina o risco de interrupção de tratamentos essenciais.',
+    },
+  },
   {
     id: 'mia-intelligence',
     title: 'Mia Intelligence',
